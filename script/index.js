@@ -54,10 +54,7 @@ const displayVideoDetails = (video) => {
   </figure>
   <div class="card-body">
     <h2 class="card-title">${video.title}</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+    <p>${video.description}</p>
   </div>
 </div>
   
@@ -99,7 +96,7 @@ const displayVideos = (videos) => {
              </div>
 
              <div class="intro">
-                <h2 class="font-semibold text-sm">Midnight Serenade</h2>
+                <h2 class="font-semibold text-sm">${video.title}</h2>
                 <p class="text-sm text-gray-400 flex gap-2">${video.authors[0].profile_name} 
                 ${video.authors[0].verified == true ? `<img class="w-5 h-5" src="https://img.icons8.com/?size=32&id=6xO3fnY41hu2&format=png" alt="">`: "" } </p>
                 <p class="text-sm text-gray-400">${video.others.views} views</p>
